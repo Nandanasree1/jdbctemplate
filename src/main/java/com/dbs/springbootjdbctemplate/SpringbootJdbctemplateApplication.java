@@ -25,18 +25,18 @@ public class SpringbootJdbctemplateApplication {
 
 public static void main(String[] args) {
 ApplicationContext applicationContext=SpringApplication.run(SpringbootJdbctemplateApplication.class, args);
-DataSource dataSource=applicationContext.getBean(DataSource.class);
-System.out.println(dataSource!=null);
-EmployeeService employeeService = applicationContext.getBean(EmployeeService.class);
-Employee employee = new Employee("1238","nandana","sree","tiupathi",100.0f);
-Employee employee2 = employeeService.createEmployee(employee);
+//DataSource dataSource=applicationContext.getBean(DataSource.class);
+//System.out.println(dataSource!=null);
+//EmployeeService employeeService = applicationContext.getBean(EmployeeService.class);
+//Employee employee = new Employee("1238","nandana","sree","tiupathi",100.0f);
+//Employee employee2 = employeeService.createEmployee(employee);
 //System.out.println(employee2);
-Optional<List<Employee>> optional2 = employeeService.getEmployeesByLastName("sree");
-if(optional2.isPresent()) {
-	System.out.println(optional2.get());
-}
-else {
-	System.out.println("record not found");
-}
+//Optional<List<Employee>> optional2 = employeeService.getEmployeesByLastName("sree");
+//if(optional2.isPresent()) {
+	//System.out.println(optional2.get());
+//}
+//else {
+	//System.out.println("record not found");
+//}
 }
 }

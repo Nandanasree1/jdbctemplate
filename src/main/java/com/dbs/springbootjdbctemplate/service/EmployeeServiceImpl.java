@@ -1,5 +1,4 @@
 package com.dbs.springbootjdbctemplate.service;
-import java.lang.StackWalker.Option;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +47,12 @@ public Optional<List<Employee>> getEmployeesByLastName(String empLastName){
 public Optional<Employee> getEmployeeeByLastName(String empId, String emplastName) {
 	// TODO Auto-generated method stub
 	return null;
+}
+@Override
+public void deleteAll() {
+	// TODO Auto-generated method stub
+	employeeRepository.deleteAll();
+	
 }
 
 }
